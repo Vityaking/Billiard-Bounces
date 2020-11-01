@@ -9,7 +9,6 @@ int main()
         if (velocity == 0) break;
         accelaration = velocity / time;
         int vertical = 0, horizontal = 0, x=length/2, y=width/2;
-        bool vege = false;
         while (velocity != 0)
         {
             if ((sin(velocity) / width) > (cos(velocity) / length))
