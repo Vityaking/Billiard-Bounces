@@ -6,7 +6,7 @@ int main()
     int length = 0, width = 0, velocity = 0, accelaration = 0, angle = 0, time=0, time_used=0;
     do {
         std::cin >> length >> width >> velocity >> angle >> time;
-        if (velocity == 0) break;
+        if (velocity == 0 && angle==0 && length==0 && width==0 && time==0) break;
         accelaration = velocity / time;
         int vertical = 0, horizontal = 0, x=length/2, y=width/2;
         while (velocity != 0)
